@@ -12,8 +12,7 @@ python3 -m virtualenv final_proyect
 ## Dev workflow
 
 ```sh
-./dev.sh
-
+source dev.sh
 ```
 
 When you're done:
