@@ -16,3 +16,8 @@ python3 -m virtualenv final_proyect
 
 ```
 
+When you're done:
+```sh
+deactivate
+```
+
