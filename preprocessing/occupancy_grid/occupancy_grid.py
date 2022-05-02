@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from matplotlib import pyplot as plt
 import numpy as np
 import os
 from typing import *
@@ -24,5 +25,14 @@ class OccupancyGrid:
     # sets the occupancy percentage given X and Y coordinates 
     def __setitem__(self, index: Tuple[int, int], value: int) -> None:
         self._grid[index] = value
-    
+    def plot(self):
+        # Create a new figure
+
+        fig = plt.figure()
+
+        ax = fig.gca()
+
+        # Plot the grid
+        ax.pcolormesh(self.get_grid(), cmap='PuBu', edgecolor='k', lw=2)
+
 
